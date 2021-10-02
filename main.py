@@ -12,14 +12,11 @@ conn = sqlite3.connect('mails_db.db')
 # Details
 email = os.environ.get('email')
 password = os.environ.get('password')
-# domain = input('Enter domain:')
-# mailto_list = [f'hr@{domain}.com', f'recruitment@{domain}.com', f'career@{domain}.com',
-            #    f'careers@{domain}.com', f'sharath.psh1@gmail.com', 'me@gmail.com']
+domain = input('Enter Domain:')
+mailto_list = [f'hr@{domain}.com', f'recruitment@{domain}.com', f'career@{domain}.com',
+               f'careers@{domain}.com', 'me@gmail.com']
 
-mailto_list = ['sharath.psh1@gmail.com','me@gmail.com','mofnaeonifoinaj903j90@noanfso.com']
-# subject = 'Sharath P Resume | Software Developer'
-subject = 'Test3'   #<<<EDIT
-domain = 'TEST'     #<<<EDIT
+subject = 'SUBJECT HERE'  # <<<EDIT
 body = f'''
 Hello { domain },
 YOUR MAIL CONTENT HERE
